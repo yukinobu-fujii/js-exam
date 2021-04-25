@@ -59,7 +59,7 @@ $(document).ready(function () {
     // 変数「judge」に"合格"を代入しておきます。
     let judge = "合格";
     for (let i=0; i<number; i++){
-      if(subject_points[i] <= 60){
+      if(subject_points[i] < 60){
         judge = "不合格";
         break;
       }
